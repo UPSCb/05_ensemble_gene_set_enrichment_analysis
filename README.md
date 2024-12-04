@@ -1,4 +1,4 @@
-# RnaSeqTutorialXX
+# RnaSeqTutorial05
 
 ## Using this template
 
@@ -25,14 +25,14 @@ In R do the following to install the dependencies
 
 ```R
 if(!require("BiocManager")) {install.packages("BiocManager")}
-BiocManager::install(c("here","learnr"))
+BiocManager::install(c("dplyr","edgeR","EGSEA","EGSEAdata","here","learnr","limma","org.Hs.eg.db","readr","tibble","UpSetR"))
 ```
 
 Then install the package using _e.g._ `pak`
 
  ```R
  if(!require("pak")){BiocManager::install("pak")}
- pak::pkg_install("UPSCb/Tutorial_XXX")
+ pak::pkg_install("UPSCb/Tutorial_05_ensemble_gene_set_enrichment_analysis")
  ```
 
 ### Troubleshooting
@@ -47,7 +47,7 @@ If the above do not resolve the installation issue, then run this instead:
 
 ```R
 if(!require("pak")){BiocManager::install("devtools")}
-devtools::install_github("UPSCb/Tutorial_XXX")
+devtools::install_github("UPSCb/Tutorial_05_ensemble_gene_set_enrichment_analysis")
 ```
 
 ## Getting started
@@ -66,7 +66,7 @@ This is the first in a series of tutorials.
 To start the tutorial run:
 
 ```{r tutorial}
-learnr::run_tutorial("XXX", package = "RnaSeqTutorialXX")
+learnr::run_tutorial("05_ensemble_gene_set_enrichment_analysis", package = "RnaSeqTutorial05")
 ```
 
 ## Accessing the code
@@ -76,11 +76,11 @@ learnr::run_tutorial("XXX", package = "RnaSeqTutorialXX")
 The tutorial is available as `.Rmd` files in the `tutorials` directory:
 
 ```{r tutorial list}
-dir(system.file(package="RnaSeqTutorialXX","tutorials"))
+dir(system.file(package="RnaSeqTutorial05","tutorials"))
 ```
 
 ```{r tutorial paths}
-list.files(path=system.file(package="RnaSeqTutorialXX","tutorials"),
+list.files(path=system.file(package="RnaSeqTutorial05","tutorials"),
            pattern="*.Rmd",
            recursive=TRUE)
 ```
@@ -90,7 +90,7 @@ list.files(path=system.file(package="RnaSeqTutorialXX","tutorials"),
 There may be script(s) available in the `scripts` directory:
 
 ```{r script paths}
-list.files(path=system.file(package="RnaSeqTutorialXX","scripts"),
+list.files(path=system.file(package="RnaSeqTutorial05","scripts"),
            pattern="*.R",
            recursive=TRUE)
 ```

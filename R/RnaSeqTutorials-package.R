@@ -1,4 +1,4 @@
-# RnaSeqTutorialXX package
+# RnaSeqTutorial05 package
 #
 # * To find the imported packages, in the terminal
 #
@@ -11,27 +11,27 @@
 #
 # ---
 # library(here)
-# pkgs <- c("learnr","palmerpenguins","tidyverse")
+# pkgs <- c("dplyr","edgeR","EGSEA","EGSEAdata","here","learnr","limma","org.Hs.eg.db","readr","tibble","UpSetR")
 # write(paste0("    ",pkgs," (>= ",unlist(installed.packages()[pkgs,"Version"],use.names=FALSE),"),"),
 #       file="Imports.tmp")
 # ---
 #
 #' @title RnaSeqTutorials package
 #' @section Tutorials:
-#' This is the XX in a series of tutorials
+#' This is the fifth in a series of tutorials
 #' \itemize{
-#' \item\code{XXX} XXX
+#' \item\code{05_ensemble_gene_set_enrichment_analysis} a tutorial on ensemble gene set enrichment analysis
 #' }
 #'
-#' @name RnaSeqTutorialXX package
-#' @rdname RnaSeqTutorialXX-package
+#' @name RnaSeqTutorial05 package
+#' @rdname RnaSeqTutorial05-package
 #' @author Nicolas Delhomme [aut,cre]
 #' @keywords package
-#' @description A simple description of the RnaSeqTutorialXX package
+#' @description A simple description of the RnaSeqTutorial05 package
 #' @seealso The vignette
 #' @examples
 #' 	\dontrun{
-#' 	learnr::run_tutorial("XXX", package = "RnaSeqTutorialXX")
+#' 	learnr::run_tutorial("05_ensemble_gene_set_enrichment_analysis", package = "RnaSeqTutorial05")
 #' 	}
 #' @keywords internal
 "_PACKAGE"
