@@ -1,23 +1,6 @@
 # RnaSeqTutorial05
 
-## Using this template
-
-1. Edit this README, change the title
-2. Edit the R/RnaSeqTutorials-package.R file, line 1, 21, 23, 26, 27, 30 and 34
-3. Update the README installation info (dependencies, github directory), you can use the code in R/RnaSeqTutorials-package.R to build the dependencies list.
-4. Replace all XXX and XX with the tutorial and package name, respectively
-5. Edit the DESCRIPTION, change the XX and XXX and add the dependencies
-6. Configure the project option to enable Roxygen to build the doc
-7. Build the doc with Roxygen
-8. Check the package
-9. Push to GH
-10. Try to install using the instructions
-11. (Fix and retry)
-12. Remove this first section :-)
-
----
-
-TITLE TO CHANGE
+Ensemble Gene Set Enrichment Analysis tutorial
 
 ## Installation
 
