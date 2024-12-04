@@ -1,0 +1,41 @@
+---
+title: "CHANGEME"
+author: "Nicolas Delhomme"
+tutorial:
+  id: "se.upsc.tutorials.01_data_science_intro"
+  version: 1.0.0
+output:
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(
+  exercise.reveal_solution=TRUE
+)
+```
+
+## Content
+
+
+
+## Session Info
+It is good practice and highly recommended to always include the session info in your analyses. This way other can reproduce them with the exact same versions of the packages you used. Use the help to find out how to print the session info.
+
+```{r session-info, exercise=TRUE, exercise.eval=TRUE}
+
+```
+
+```{r session-info-hint}
+sessionInfo()
+```
+
+## Copyright
+This material is provided under the following license:
+
+`CC-BY-NC-SA 4.0:` _Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License_
+
