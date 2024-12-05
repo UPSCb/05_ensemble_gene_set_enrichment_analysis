@@ -49,7 +49,7 @@ This is the fifth in a series of tutorials.
 To start the tutorial run:
 
 ```{r tutorial}
-learnr::run_tutorial("05_ensemble_gene_set_enrichment_analysis", package = "RnaSeqTutorial05")
+learnr::run_tutorial("05_ensemble_gsea", package = "RnaSeqTutorial05")
 ```
 
 ## Accessing the code

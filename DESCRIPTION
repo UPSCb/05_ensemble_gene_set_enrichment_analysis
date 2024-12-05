@@ -4,8 +4,7 @@ Title: Ensemble Gene Set Enrichment Analysis Tutorial
 Version: 1.0.0
 Author: Nicolas Delhomme [aut, cre]
 Maintainer: Nicolas Delhomme <nicolas.delhomme@umu.se>
-Description: A package containing the fifth tutorial in a series that go from the Exploratory Data Analysis
-    to the Differential Gene Expression, Differential Transcript Usage and Gene Set Enrichment Analysis
+Description: A package containing the fifth tutorial in a series that go from the Exploratory Data Analysis to the Differential Gene Expression, Differential Transcript Usage and Gene Set Enrichment Analysis
 License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 Encoding: UTF-8
 LazyData: true
