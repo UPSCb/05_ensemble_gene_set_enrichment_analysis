@@ -2,8 +2,8 @@
 title: "Ensemble Gene Set Enrichment Analysis (EGSEA)"
 author: "Nicolas Delhomme for Bn Bioinformatics"
 tutorial:
-  id: "org.bnbio.tutorials.05_ensemble_gene_set_enrichment_analysis"
-  version: 0.1
+  id: "se.upsc.tutorials.05_ensemble_gene_set_enrichment_analysis"
+  version: 1.0.0
 output:
   learnr::tutorial:
     progressive: true
@@ -63,11 +63,11 @@ suppressPackageStartupMessages({
   library(tibble)
 })
 
-txi <- readRDS(here("www/tximport.rds"))
+txi <- readRDS(here("tutorials/05_ensemble_gene_set_enrichment_analysis/www/tximport.rds"))
 
 counts <- round(txi$counts)
 
-sample_file <- here("www/samples_table.tsv")
+sample_file <- here("tutorials/05_ensemble_gene_set_enrichment_analysis/www/samples_table.tsv")
 
 samples <- read_tsv(sample_file,col_types=c("cfff")) %>% tibble::column_to_rownames("sample_id") %>% as.data.frame()
 
@@ -112,7 +112,7 @@ dge <- calcNormFactors(dge)
 Before proceeding, we want to remove uninformative genes. For that, we can (cheat a little) reuse the independent filtering results from DESeq (we could also recalculate them using `edgeR` - see its vignette for details).
 
 ```{r indp, exercise=TRUE, exercise.eval=TRUE, exercise.setup="normFactor"}
-res <- readRDS(here("www/G03_vs_G02_at_T04.rds"))
+res <- readRDS(here("tutorials/05_ensemble_gene_set_enrichment_analysis/www/G03_vs_G02_at_T04.rds"))
 
 suppressPackageStartupMessages(filt.sel <- !is.na(res$padj))
 
@@ -245,7 +245,7 @@ Finally, it ran and we can now explore the results. You can also scroll down to 
 ---
 
 ```{r load, include=FALSE}
-gsa <- readRDS(here("www/gsa.rds"))
+gsa <- readRDS(here("tutorials/05_ensemble_gene_set_enrichment_analysis/www/gsa.rds"))
 ```
 
 The details and summary.
@@ -358,7 +358,7 @@ head(t)
 ## Report
 This takes a long time...
 ```{r report, eval=FALSE, echo=TRUE}
- generateReport(gsa, number = 10, report.dir=here("www/analysis/G03-G02-egsea-report"))
+ generateReport(gsa, number = 10, report.dir=here("tutorials/05_ensemble_gene_set_enrichment_analysis/www/analysis/G03-G02-egsea-report"))
 ```
 
 ## Session Info
